@@ -13,6 +13,14 @@ import { createGlobalStyle } from "styled-components"
 import Header from "./header"
 import "./layout.css"
 
+const GlobalStyle = createGlobalStyle`
+* {
+  margin: 0;
+  padding: 0;
+}
+
+`
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -35,11 +43,6 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
     </>
   )
