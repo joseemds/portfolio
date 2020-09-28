@@ -9,10 +9,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <ProfileCard
-      image="ALo som teste"
-      name=" José Eduardo"
-      description=" Remember to query from metadata"
+      image=<Image />
+      name="José Eduardo"
+      description="Remember to query metadata"
     />
+    <Image />
     <p>Now go build something great.</p>
   </Layout>
 )

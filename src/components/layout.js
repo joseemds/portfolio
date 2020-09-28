@@ -14,11 +14,6 @@ import Header from "./header"
 import "./layout.css"
 
 const GlobalStyle = createGlobalStyle`
-* {
-  margin: 0;
-  padding: 0;
-}
-
 `
 
 const Layout = ({ children }) => {

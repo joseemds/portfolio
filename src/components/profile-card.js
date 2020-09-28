@@ -5,7 +5,7 @@ import Image from "./image"
 
 const ProfileCard = ({ image, name, description }) => {
   return (
-    <Card image={<Image style={{ borderRadius: "25px;", width: "10px;" }} />}>
+    <Card image={<Image />}>
       <p>{name}</p>
       <p>{description}</p>
     </Card>

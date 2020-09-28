@@ -1,14 +1,24 @@
 import React from "react"
 import styled from "styled-components"
 
-const TopCard = styled.div`
+const CardHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   background: #612f80;
 `
 
-const BottomCard = styled.div`
+const CardFooter = styled.div`
   width: 100%;
   background: #fffafa;
+`
+
+const CardBody = styled.section`
+  width: 100%;
+  background: red;
+  display: flex;
+  flex-direction: column;
 `
 
 const CardLayout = styled.div`
@@ -19,14 +29,15 @@ const CardLayout = styled.div`
   justify-content: center;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 25vw;
+  width: 300px;
+  heigth: 140px;
 `
 
 const Card = ({ children, image }) => (
   <>
     <CardLayout>
-      <TopCard>{image}</TopCard>
-      <BottomCard>{children}</BottomCard>
+      <CardHeader>{image}</CardHeader>
+      <CardBody>{children}</CardBody>
     </CardLayout>
   </>
 )
